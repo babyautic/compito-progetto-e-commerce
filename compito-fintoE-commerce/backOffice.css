@@ -1,0 +1,225 @@
+/* Stili generali per il Back Office - Dark Mode */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  /* Sfondo scuro */
+  color: #e0e0e0;
+  /* Testo chiaro */
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenitore principale */
+#back-office {
+  padding: 20px;
+  background-color: #121212;
+  /* Sfondo scuro per tutto il corpo */
+  text-align: center;
+  /* Allinea il contenuto al centro */
+}
+
+#gestioneTitoli {
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+a {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 20px;
+
+}
+
+/* Modulo di aggiunta prodotto */
+#add-product-form {
+  background-color: #1e1e1e;
+  /* Sfondo scuro per il form */
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  /* Aggiunta transizione per l'ombra */
+}
+
+/* Effetto hover sul form */
+#add-product-form:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  /* Aggiunta ombra più forte al passaggio del mouse */
+}
+
+/* Etichette dei campi */
+#add-product-form label {
+  display: block;
+  font-size: 1rem;
+  color: #ecf0f1;
+  /* Testo chiaro */
+  margin-bottom: 8px;
+}
+
+/* Input e textarea */
+#add-product-form input[type="text"],
+#add-product-form input[type="number"],
+#add-product-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #444444;
+  /* Bordo più scuro */
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #2c2c2c;
+  /* Sfondo scuro per gli input */
+  color: #e0e0e0;
+  /* Testo chiaro */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus sugli input */
+#add-product-form input[type="text"]:focus,
+#add-product-form input[type="number"]:focus,
+#add-product-form textarea:focus {
+  border-color: #2980b9;
+  /* Bordo blu chiaro al focus */
+  outline: none;
+}
+
+/* Pulsante */
+#add-product-form button {
+  background-color: #00000093;
+  /* Pulsante blu */
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover del pulsante */
+#add-product-form button:hover {
+  background-color: #1abc9c;
+  /* Verde chiaro al passaggio del mouse */
+}
+
+/* Tabella dei prodotti disponibili */
+#lista-prodotti {
+  width: 80%;
+  /* Imposta la larghezza della tabella per centrarla */
+  margin: 30px auto;
+  border-collapse: collapse;
+  border-radius: 8px;
+  /* Bordo arrotondato per la tabella */
+}
+
+/* Intestazioni della tabella */
+#lista-prodotti th {
+  background-color: #0f68bb86;
+  /* Sfondo blu per l'intestazione */
+  color: #ffffff;
+  padding: 12px 15px;
+  text-align: left;
+  border-top-left-radius: 8px;
+  /* Angolo arrotondato */
+  border-top-right-radius: 8px;
+  /* Angolo arrotondato */
+}
+
+/* Righe della tabella */
+#lista-prodotti tr:nth-child(even) {
+  background-color: #00000093;
+  /* Colore di sfondo scuro per le righe pari */
+}
+
+#lista-prodotti tr:nth-child(odd) {
+  background-color: #1e1e1e;
+  /* Colore di sfondo più scuro per le righe dispari */
+}
+
+/* Celle della tabella */
+#lista-prodotti td {
+  color: #ecf0f1;
+  /* Testo chiaro nelle celle */
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #444444;
+  /* Bordi scuri tra le celle */
+  transition: background-color 0.3s ease;
+  /* Transizione per l'hover sulle righe */
+}
+
+/* Hover sulle righe della tabella */
+#lista-prodotti tr:hover {
+  background-color: #34495e;
+  /* Colore di sfondo al passaggio del mouse */
+}
+
+/* Pulsanti per eliminare o modificare il prodotto */
+button.elimina-prodotto,
+button.modifica-prodotto {
+  background-color: #e74c3c;
+  /* Rosso per eliminare */
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover sui pulsanti */
+button.elimina-prodotto:hover,
+button.modifica-prodotto:hover {
+  background-color: #1abc9c;
+  /* Verde chiaro al passaggio del mouse */
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#tableFlex {
+  display: flex;
+  justify-content: center;
+}
+
+/* Stili responsivi per schermi più piccoli */
+@media (max-width: 768px) {
+
+  /* Modifica la larghezza del form su schermi piccoli */
+  #add-product-form {
+    width: 90%;
+  }
+
+  #add-product-form label {
+    font-size: 0.9rem;
+  }
+
+
+  #add-product-form button {
+    font-size: 1rem;
+  }
+
+  #lista-prodotti th,
+  #lista-prodotti td {
+    font-size: 0.9rem;
+  }
+
+  button.elimina-prodotto,
+  button.modifica-prodotto {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}

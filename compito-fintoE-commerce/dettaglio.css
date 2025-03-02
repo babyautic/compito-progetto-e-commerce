@@ -1,0 +1,111 @@
+/* Stili generali per la pagina di dettaglio prodotto */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  /* Sfondo scuro */
+  color: #e0e0e0;
+  /* Testo chiaro */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  /* Centra orizzontalmente */
+  align-items: center;
+  /* Centra verticalmente */
+  height: 100vh;
+  /* Imposta l'altezza del body a 100% della finestra */
+  flex-direction: column;
+}
+
+/* Titolo della pagina */
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Contenitore per i dettagli del prodotto come una card */
+#dettagli-prodotto {
+  background-color: #1e1e1e;
+  /* Sfondo scuro per il contenitore */
+  border-radius: 15px;
+  /* Bordi arrotondati per la card */
+  padding: 30px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  /* Ombra per effetto card */
+  margin-top: 20px;
+  /* Spazio sopra il contenitore */
+  text-align: center;
+  /* Centra il contenuto */
+}
+
+/* Immagine del prodotto */
+#dettagli-prodotto img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Nome del prodotto */
+#dettagli-prodotto h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Descrizione del prodotto */
+#dettagli-prodotto p {
+  color: #ecf0f1;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Prezzo del prodotto */
+#dettagli-prodotto .prezzo {
+  font-size: 1.5rem;
+  color: #ffffff;
+  /* Verde chiaro per il prezzo */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Pulsante di ritorno alla home */
+a {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+
+
+/* Stili responsivi per schermi più piccoli */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #dettagli-prodotto {
+    padding: 15px;
+    width: 90%;
+  }
+
+  #dettagli-prodotto h2 {
+    font-size: 1.8rem;
+  }
+
+  #dettagli-prodotto p {
+    font-size: 0.9rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+}

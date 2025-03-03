@@ -1,10 +1,10 @@
 const apiEndpoint = 'https://striveschool-api.herokuapp.com/api/product/';
-const apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2MzMDgwN2UwYTU1MDAwMTVlNjVkZmQiLCJpYXQiOjE3NDA4NTEyOTgsImV4cCI6MTc0MjA2MDg5OH0.8FGivQMt7Afl-pw0I74fKds5Rv6OQYVyutfvoq4szpE'; // La tua API key
+const apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2MzMDgwN2UwYTU1MDAwMTVlNjVkZmQiLCJpYXQiOjE3NDA4NTEyOTgsImV4cCI6MTc0MjA2MDg5OH0.8FGivQMt7Afl-pw0I74fKds5Rv6OQYVyutfvoq4szpE'; // API key
 
 document.addEventListener('DOMContentLoaded', function () {
   const idProdotto = sessionStorage.getItem('idProdotto');
   if (!idProdotto) {
-    window.location.href = 'backOffice.html'; // Se non c'è ID, reindirizza al back office
+    window.location.href = 'backOffice.html'; // Se non c'è ID, reind al back office
     return;
   }
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return response.json();
     })
     .then(data => {
-      // Popola i campi del modulo con i dati del prodotto
+      
       document.getElementById('nome').value = data.name;
       document.getElementById('descrizione').value = data.description;
       document.getElementById('prezzo').value = data.price;
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
       brand: document.getElementById('brand').value
     };
 
-    // Verifica che tutti i campi siano stati compilati
+    
     if (!prodottoModificato.name || !prodottoModificato.description || !prodottoModificato.price || !prodottoModificato.imageUrl || !prodottoModificato.brand) {
       alert('Tutti i campi sono obbligatori!');
       return;
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
     btnSubmit.disabled = true;
     btnSubmit.textContent = 'Caricamento...';
 
-    // Invia le modifiche al server
+    
     fetch(`${apiEndpoint}${idProdotto}`, {
       method: 'PUT',
       headers: {

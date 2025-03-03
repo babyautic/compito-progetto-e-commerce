@@ -1,10 +1,10 @@
 const apiEndpoint = 'https://striveschool-api.herokuapp.com/api/product/';
-const apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2MzMDgwN2UwYTU1MDAwMTVlNjVkZmQiLCJpYXQiOjE3NDA4NTEyOTgsImV4cCI6MTc0MjA2MDg5OH0.8FGivQMt7Afl-pw0I74fKds5Rv6OQYVyutfvoq4szpE';  // Sostituisci con la tua chiave API
+const apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2MzMDgwN2UwYTU1MDAwMTVlNjVkZmQiLCJpYXQiOjE3NDA4NTEyOTgsImV4cCI6MTc0MjA2MDg5OH0.8FGivQMt7Afl-pw0I74fKds5Rv6OQYVyutfvoq4szpE';  // API Key
 
 document.addEventListener('DOMContentLoaded', function () {
     const idProdotto = sessionStorage.getItem('idProdotto');
     if (!idProdotto) {
-      window.location.href = 'homePage.html'; // Se non c'è ID, torna alla home page
+      window.location.href = 'homePage.html'; 
     }
   
     // Funzione per caricare i dettagli del prodotto
@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   
-    // Carica i dettagli del prodotto all'inizio
     caricaDettagliProdotto();
   });
   

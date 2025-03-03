@@ -1,12 +1,12 @@
-/* Stili generali per il Dark Mode */
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   box-sizing: border-box;
-  background-color: #121212; /* Sfondo scuro */
-  color: #e0e0e0; /* Testo chiaro */
+  background-color: #121212;
+  color: #e0e0e0; 
 }
 
 /* Contenitore principale */
@@ -18,9 +18,8 @@ html, body {
   padding: 20px;
 }
 
-/* Stile per la barra di navigazione */
 .navbar {
-  background-color: #1e1e1e; /* Sfondo scuro per la navbar */
+  background-color: #1e1e1e; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,20 +45,20 @@ html, body {
 }
 
 .nav-links a {
-  color: #ffffff; /* Link bianchi */
+  color: #ffffff; 
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #2980b9; /* Blu sui link al passaggio del mouse */
+  color: #2980b9; 
 }
 
-/* Intestazione */
+
 h1 {
   text-align: center;
-  color: #ffffff; /* Colore del testo chiaro */
+  color: #ffffff; 
   margin: 20px 0;
   font-size: 2.5rem;
 }
@@ -74,9 +73,9 @@ h1 {
   padding: 20px;
 }
 
-/* Stile delle carte prodotto */
+/* Stile delle card */
 .prodotto-card {
-  background-color: #1e1e1e; /* Sfondo scuro per la card del prodotto */
+  background-color: #1e1e1e; 
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -114,26 +113,16 @@ h1 {
 /* Nome prodotto */
 .prodotto-card h2 {
   font-size: 1.6rem;
-  color: #ecf0f1; /* Colore chiaro per il nome del prodotto */
+  color: #ecf0f1; 
   margin-bottom: 10px;
 }
 
 /* Descrizione prodotto */
 .prodotto-card p {
-  color: #bdc3c7; /* Colore grigio chiaro per la descrizione */
+  color: #bdc3c7; 
   font-size: 1rem;
   margin-bottom: 15px;
   line-height: 1.5;
-}
-
-
-
-/* Stile per la nav bar su schermi più piccoli */
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-  }
 }
 
 #prodotti-lista {
@@ -144,7 +133,7 @@ h1 {
 }
 
 .prodotto {
-  background-color: #1e1e1e; /* Sfondo scuro per i prodotti */
+  background-color: #1e1e1e; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -166,18 +155,18 @@ h1 {
 
 .prodotto h3 {
   font-size: 1.2rem;
-  color: #ecf0f1; /* Colore chiaro per il nome del prodotto */
+  color: #ecf0f1; 
   margin-bottom: 10px;
 }
 
 .prodotto p {
   font-size: 1rem;
-  color: #bdc3c7; /* Colore grigio chiaro per la descrizione */
+  color: #bdc3c7; 
 }
 
 .prodotto strong {
   font-size: 1.1rem;
-  color: #27ae60; /* Verde per il prezzo */
+  color: #27ae60; 
 }
 
 

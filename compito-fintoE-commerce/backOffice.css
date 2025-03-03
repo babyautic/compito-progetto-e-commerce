@@ -87,14 +87,12 @@ a {
 #add-product-form input[type="number"]:focus,
 #add-product-form textarea:focus {
   border-color: #2980b9;
-  /* Bordo blu chiaro al focus */
   outline: none;
 }
 
 /* Pulsante */
 #add-product-form button {
   background-color: #00000093;
-  /* Pulsante blu */
   color: #ffffff;
   border: none;
   padding: 12px 20px;
@@ -108,66 +106,52 @@ a {
 /* Hover del pulsante */
 #add-product-form button:hover {
   background-color: #1abc9c;
-  /* Verde chiaro al passaggio del mouse */
 }
 
 /* Tabella dei prodotti disponibili */
 #lista-prodotti {
   width: 80%;
-  /* Imposta la larghezza della tabella per centrarla */
   margin: 30px auto;
   border-collapse: collapse;
   border-radius: 8px;
-  /* Bordo arrotondato per la tabella */
 }
 
-/* Intestazioni della tabella */
 #lista-prodotti th {
   background-color: #0f68bb86;
-  /* Sfondo blu per l'intestazione */
   color: #ffffff;
   padding: 12px 15px;
   text-align: left;
   border-top-left-radius: 8px;
-  /* Angolo arrotondato */
   border-top-right-radius: 8px;
-  /* Angolo arrotondato */
 }
 
-/* Righe della tabella */
+
 #lista-prodotti tr:nth-child(even) {
   background-color: #00000093;
-  /* Colore di sfondo scuro per le righe pari */
 }
 
 #lista-prodotti tr:nth-child(odd) {
   background-color: #1e1e1e;
-  /* Colore di sfondo più scuro per le righe dispari */
 }
 
 /* Celle della tabella */
 #lista-prodotti td {
   color: #ecf0f1;
-  /* Testo chiaro nelle celle */
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #444444;
-  /* Bordi scuri tra le celle */
   transition: background-color 0.3s ease;
-  /* Transizione per l'hover sulle righe */
 }
 
 /* Hover sulle righe della tabella */
 #lista-prodotti tr:hover {
   background-color: #34495e;
-  /* Colore di sfondo al passaggio del mouse */
 }
 
 /* Pulsanti per eliminare o modificare il prodotto */
 button.elimina-prodotto,
 button.modifica-prodotto {
   background-color: #e74c3c;
-  /* Rosso per eliminare */
   color: #ffffff;
   border: none;
   padding: 6px 12px;
@@ -182,7 +166,6 @@ button.modifica-prodotto {
 button.elimina-prodotto:hover,
 button.modifica-prodotto:hover {
   background-color: #1abc9c;
-  /* Verde chiaro al passaggio del mouse */
 }
 
 h2 {
@@ -193,33 +176,4 @@ h2 {
 #tableFlex {
   display: flex;
   justify-content: center;
-}
-
-/* Stili responsivi per schermi più piccoli */
-@media (max-width: 768px) {
-
-  /* Modifica la larghezza del form su schermi piccoli */
-  #add-product-form {
-    width: 90%;
-  }
-
-  #add-product-form label {
-    font-size: 0.9rem;
-  }
-
-
-  #add-product-form button {
-    font-size: 1rem;
-  }
-
-  #lista-prodotti th,
-  #lista-prodotti td {
-    font-size: 0.9rem;
-  }
-
-  button.elimina-prodotto,
-  button.modifica-prodotto {
-    font-size: 0.8rem;
-    padding: 5px 10px;
-  }
 }
